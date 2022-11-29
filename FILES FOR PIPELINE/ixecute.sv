@@ -60,7 +60,7 @@ module ixecute(
     
     ex_mem execute_reg(
     .clk(clk), .reset(reset),
-    .RegWriteE(RegWriteE), .ResultSrcE(ResultSrcE), .MemWriteE(MemWriteE), .ALUResultE(ALUResultE), .WriteDataE(RD2E), .RdE(RdE), .PCPlus4E(PCPlus4E),
+    .RegWriteE(RegWriteE), .ResultSrcE(ResultSrcE), .MemWriteE(MemWriteE), .ALUResultE(ALUResultE), .WriteDataE(forwardBResult), .RdE(RdE), .PCPlus4E(PCPlus4E),
     .RegWriteM(RegWriteM), .ResultSrcM(ResultSrcM), .MemWriteM(MemWriteM), .ALUResultM(ALUResultM), .WriteDataM(WriteDataM), .RdM(RdM), .PCPlus4M(PCPlus4M)
     );
 
